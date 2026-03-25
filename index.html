@@ -1,26 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/mediaquery.css">
-</head>
-<body>
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/mediaquery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <main>
-        <section id="login">
-            <div id="imagem">
-                
+      <section id="login">
+        <div id="imagem"></div>
+        <div id="formulario">
+          <h1>Login</h1>
+          <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta.</p>
+          <p></p>
+          <form action="login.php" method="post" autocomplete="on">
+            <div class="campo">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="email"
+                name="login"
+                id="ilogin"
+                placeholder="seu e-mail"
+                autocomplete="email"
+                required
+                maxlength="30"
+              />
+              <label for="ilogin"></label>
             </div>
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta.</p>
-                <form action="login.php" method="post">
-
-                </form>
+            <div class="campo">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                name="senha"
+                id="isenha"
+                placeholder="sua senha"
+                autocomplete="current-password"
+                required
+                minlength="8"
+                maxlength="20"
+              />
+              <label for="isenha"></label>
             </div>
-        </section>
+            <input type="submit" value="entrar" />
+            <a href="esqueci.html"
+              >Esqueci a senha<i class="fa-solid fa-envelope">mail</i></a
+            >
+          </form>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
